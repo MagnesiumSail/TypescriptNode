@@ -12,8 +12,11 @@ const createHeaders = () => ({
     'Authorization': `Bearer ${exports.Token}`,
 });
 exports.createHeaders = createHeaders;
-const createMethods = (method) => ({
-    method,
-    header: (0, exports.createHeaders)()
-});
+const createMethods = (method) => {
+    const headers = (0, exports.createHeaders)();
+    return {
+        method,
+        headers
+    };
+};
 exports.createMethods = createMethods;

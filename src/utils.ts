@@ -8,7 +8,13 @@ export const createHeaders = (): Options['headers'] => ({
     'Authorization': `Bearer ${Token}`,
 });
 
-export const createMethods = (method?: string): Options => ({
-    method,
-    headers: createHeaders()
-})
+export const createMethods = (method?: string): Options => {
+    const headers = createHeaders();
+    return {
+        method,
+        headers
+    }
+}
+
+export type HeadersType = Options['headers'];
+export type MethodsType = Options;

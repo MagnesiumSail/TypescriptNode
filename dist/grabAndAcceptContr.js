@@ -5,7 +5,9 @@ let ContractURL = 'https://api.spacetraders.io/v2/my/contracts';
 let acceptURL = '';
 const Looker = (0, utils_1.createHeaders)();
 const Accepter = (0, utils_1.createMethods)('POST');
-fetch(ContractURL, Looker)
+fetch(ContractURL, {
+    headers: Looker
+})
     .then(response => response.json())
     .then(response => {
     console.log(response);
