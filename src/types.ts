@@ -1,4 +1,4 @@
-interface options {
+export interface Options {
     method?: string,
     headers: {
         ContentType: string;

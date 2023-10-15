@@ -1,9 +1,14 @@
-export const createHeaders = (token: string) => ({
+import { Options } from './types';
+import dotenv from 'dotenv';
+dotenv.config();
+export const Token = process.env.TOKEN || '';
+
+export const createHeaders = (): Options['headers'] => ({
     'ContentType': 'application/json',
-    'Authorization': `Bearer ${token}`,
+    'Authorization': `Bearer ${Token}`,
 });
 
-export const createMethods = (token: string, method?: string,) => ({
+export const createMethods = (method?: string): Options => ({
     method,
-    header: createHeaders(token)
+    headers: createHeaders()
 })

@@ -1,26 +1,12 @@
-import { Options } from './types';
-import { createMethods } from './utils';
+import { createHeaders, createMethods } from './utils';
 
 let ContractURL: string = 'https://api.spacetraders.io/v2/my/contracts';
 let acceptURL: string = '';
 
 
+const Looker: Options = createHeaders();
 
-
-const Looker: options = {
-    headers: {
-        'ContentType': 'application/json',
-        'Authorization': `Bearer ${Token}`,
-    },
-};
-
-const Accepter: options = {
-    method: 'POST',
-    headers: {
-        'ContentType': 'application/json',
-        'Authorization': `Bearer ${Token}`,
-    }
-}
+const Accepter: Options = createMethods('POST');
 
 fetch(ContractURL, Looker)
     .then(response => response.json())
