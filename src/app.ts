@@ -1,3 +1,4 @@
+
 // Variable declaration with type annotation
 let message: string = "Hello, TypeScript!";
 console.log(message);
