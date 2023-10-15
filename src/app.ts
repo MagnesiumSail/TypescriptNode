@@ -1,9 +1,3 @@
-import express from 'express';
-const app = express();
-// Variable declaration with type annotation
-let message: string = "Hello, TypeScript!";
-console.log(message);
-
-// Type inference (TypeScript can infer types)
-let count = 5;
-console.log(count);
+import axios from 'axios';
+const apiURL = 'https://api.spacetraders.io/v2/my/contracts'
+const Token = 
