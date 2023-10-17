@@ -4,9 +4,7 @@ This is the beginning of what could be larger project, that interfaces with the 
 
 I built this program as a learning experience for typescript, as well as to learn the Space Trader's database.
 
-{Provide a link to your YouTube demonstration. It should be a 4-5 minute demo of the software running and a walkthrough of the code. Focus should be on sharing what you learned about the language syntax.}
-
-[Software Demo Video](http://youtube.link.goes.here)
+[Typescript Demo Video](https://youtu.be/0UxUSOTFLoY)
 
 # Development Environment
 

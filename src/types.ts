@@ -20,4 +20,3 @@ export interface DataObject {
     y: number;
     traits?: Trait[];
 }
-
